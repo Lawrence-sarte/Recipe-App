@@ -35,19 +35,19 @@ const changeHandler = ({target}) => {
         <tbody>
           <tr>
             <td>
-              <input id="name" name="name" onChange={changeHandler} value={formData.name} placeholder="Name"/>
+              <input id="name" name="name" onChange={changeHandler} value={formData.name} placeholder="Name" required />
             </td>
             <td>
-              <input id="cuisine" name="cuisine" onChange={changeHandler} value={formData.cuisine} placeholder="Cuisine"/>
+              <input id="cuisine" name="cuisine" onChange={changeHandler} value={formData.cuisine} placeholder="Cuisine" required />
             </td>
             <td>
-              <input id="photo" name="photo" onChange={changeHandler} value={formData.photo} placeholder="URL"/>
+              <input type="url" id="photo" name="photo" onChange={changeHandler} value={formData.photo} placeholder="URL" required />
             </td>
             <td>
-              <textarea id="ingredients" name="ingredients" onChange={changeHandler} value={formData.ingredients} placeholder="Ingredients"/>
+              <textarea id="ingredients" name="ingredients" onChange={changeHandler} value={formData.ingredients} placeholder="Ingredients" required />
             </td>
             <td>
-              <textarea id="preparation" name="preparation" onChange={changeHandler} value={formData.preparation} placeholder="Preparation"/>
+              <textarea id="preparation" name="preparation" onChange={changeHandler} value={formData.preparation} placeholder="Preparation" required />
             </td>
             <td>
               <button type="submit">Create</button>
